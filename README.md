@@ -4,6 +4,7 @@
   <img alt="Coverity Scan Build Status"
        src="https://scan.coverity.com/projects/11213/badge.svg"/>
 </a>
+[![license](https://img.shields.io/github/license/mashape/apistatus.svg)]()
 
 # embeddedspy
 A simple embedded app which provide access to datas through json interface and the web ui to spy values and later update its.
