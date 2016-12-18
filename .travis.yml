@@ -6,12 +6,17 @@ os:
 #  - osx https://docs.travis-ci.com/user/multi-os/
 
 compiler:
- - g++
+ - gcc
+
+install:
+    - if [ "$CXX" = "g++" ]; then export CXX="g++-4.8" CC="gcc-4.8"; fi
 
 addons:
   apt:
     packages:
       - graphviz
+      - gcc-4.8
+      - g++-4.8
 #    sources:
 #      - george-edison55/cmake-3.x
 
