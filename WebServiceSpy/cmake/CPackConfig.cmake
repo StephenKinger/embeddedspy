@@ -64,7 +64,7 @@ set(CPACK_COMPONENT_DEV_DEPENDS libs)
 # _____________________________________________________________________________
 
 set(CPACK_DEBIAN_PACKAGE_MAINTAINER "${CPACK_PACKAGE_CONTACT}")
-SET(CPACK_DEBIAN_PACKAGE_DEPENDS "libc6 (>= 2.3.1-6), libboost-test-dev")
+SET(CPACK_DEBIAN_PACKAGE_DEPENDS "libc6 (>= 2.3.1-6)")
 SET(CPACK_DEBIAN_PACKAGE_CONFLICTS "Hello0-apps")
 
 # RPM specific configuration (minimum)
