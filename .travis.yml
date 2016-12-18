@@ -13,6 +13,8 @@ install:
 
 addons:
   apt:
+    sources:
+      - ubuntu-toolchain-r-test
     packages:
       - graphviz
       - gcc-4.8
