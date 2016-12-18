@@ -37,11 +37,7 @@ if (CMAKE_VERSION VERSION_LESS 2.8.11)
                         "${gmock_SOURCE_DIR}/include")
 endif()
 
-if(CMAKE_COMPILER_IS_GNUCXX)
-    add_definitions(-std=gnu++11)
-endif()
-
-#set(CMAKE_CXX_STANDARD 11) # C++11...
+set(CMAKE_CXX_STANDARD 11) # C++11...
 #set(CMAKE_CXX_STANDARD_REQUIRED ON) #...is required...
 # set(CMAKE_CXX_EXTENSIONS OFF) #...without compiler extensions like gnu++11
 
