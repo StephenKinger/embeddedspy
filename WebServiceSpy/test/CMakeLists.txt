@@ -1,5 +1,9 @@
 # @author  Barthélémy von Haller
 
+if(CMAKE_COMPILER_IS_GNUCXX)
+    add_definitions(-std=gnu++11)
+endif()
+
 # Compile C++ tests (here only one, but it will grab whatever cxx is in the test directory)
 file(GLOB_RECURSE TEST_FILES RELATIVE ${CMAKE_CURRENT_SOURCE_DIR} *.cpp)
 

@@ -2,7 +2,7 @@
 #
 # @author  bvonhall
 
-cmake_minimum_required(VERSION 2.8.12)
+cmake_minimum_required(VERSION 3.1)
 set(CMAKE_MODULE_PATH ${CMAKE_MODULE_PATH} ${CMAKE_CURRENT_SOURCE_DIR}/cmake)
 
 enable_testing() # needed on top-level CMakeLists.txt
@@ -37,6 +37,9 @@ if (CMAKE_VERSION VERSION_LESS 2.8.11)
                         "${gmock_SOURCE_DIR}/include")
 endif()
 
+set(CMAKE_CXX_STANDARD 11) # C++11...
+#set(CMAKE_CXX_STANDARD_REQUIRED ON) #...is required...
+# set(CMAKE_CXX_EXTENSIONS OFF) #...without compiler extensions like gnu++11
 
 add_subdirectory(WebServiceSpy)
 # add_subdirectory(ProjB)

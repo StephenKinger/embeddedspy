@@ -1,6 +1,6 @@
 
 set(LIB_HEADERS
-  "${CMAKE_CURRENT_BINARY_DIR}/../include/WebService/Version.h" # Generated header
+  "${CMAKE_CURRENT_BINARY_DIR}/../include/WebServiceSpy/Version.h" # Generated header
   ../include/WebServiceSpy/WebServer.h # Normal header
 )
 
@@ -9,6 +9,7 @@ set(LIB_SOURCES
 )
 
 set(APP_HEADERS
+
 )
 
 set(APP_SOURCES
