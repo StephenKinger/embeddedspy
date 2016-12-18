@@ -1,4 +1,4 @@
-#include "WebserviceSpy/WebServer.h"
+#include "WebServiceSpy/WebServer.h"
 #include "WebServiceSpy/Version.h"
 
 #include <iostream>
