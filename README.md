@@ -1,5 +1,9 @@
 # Status
 [![Build Status](https://travis-ci.org/StephenKinger/embeddedspy.svg)](https://travis-ci.org/StephenKinger/embeddedspy)
+<a href="https://scan.coverity.com/projects/stephenkinger-embeddedspy">
+  <img alt="Coverity Scan Build Status"
+       src="https://scan.coverity.com/projects/11213/badge.svg"/>
+</a>
 
 # embeddedspy
 A simple embedded app which provide access to datas through json interface and the web ui to spy values and later update its.
