@@ -12,8 +12,6 @@ addons:
   apt:
     packages:
       - graphviz
-      - cmake
-      - doxygen
 #    sources:
 #      - george-edison55/cmake-3.x
 
@@ -38,10 +36,10 @@ install:
   ############################################################################
   # Install a recent Doxygen
   ############################################################################
-#  - |
-#    DOXYGEN_URL="http://ftp.stack.nl/pub/users/dimitri/doxygen-1.8.10.linux.bin.tar.gz"
-#    mkdir doxygen && travis_retry wget --quiet -O - ${DOXYGEN_URL} | tar --strip-components=1 -xz -C doxygen
-#    export PATH=${DEPS_DIR}/doxygen/bin:${PATH}
+  - |
+    DOXYGEN_URL="http://ftp.stack.nl/pub/users/dimitri/doxygen-1.8.10.linux.bin.tar.gz"
+    mkdir doxygen && travis_retry wget --quiet -O - ${DOXYGEN_URL} | tar --strip-components=1 -xz -C doxygen
+    export PATH=${DEPS_DIR}/doxygen/bin:${PATH}
   ############################################################################
   # Back to ${TRAVIS_BUILD_DIR}
   ############################################################################
@@ -53,7 +51,7 @@ script:
  - mkdir install
  - cd build
  - cmake -DCMAKE_BUILD_TYPE=Debug -DCMAKE_INSTALL_PREFIX=${PWD}../install ..
- - make -j
+ - make
  - make doc
  - make test
  - make install
