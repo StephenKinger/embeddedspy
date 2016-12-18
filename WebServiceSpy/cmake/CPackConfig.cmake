@@ -63,20 +63,20 @@ set(CPACK_COMPONENT_DEV_DEPENDS libs)
 # Debian specific configuration (minimum)
 # _____________________________________________________________________________
 
-#set(CPACK_DEBIAN_PACKAGE_MAINTAINER "${CPACK_PACKAGE_CONTACT}")
-#SET(CPACK_DEBIAN_PACKAGE_DEPENDS "libc6 (>= 2.3.1-6), libboost-test-dev")
-#SET(CPACK_DEBIAN_PACKAGE_CONFLICTS "Hello0-apps")
+set(CPACK_DEBIAN_PACKAGE_MAINTAINER "${CPACK_PACKAGE_CONTACT}")
+SET(CPACK_DEBIAN_PACKAGE_DEPENDS "libc6 (>= 2.3.1-6), libboost-test-dev")
+SET(CPACK_DEBIAN_PACKAGE_CONFLICTS "Hello0-apps")
 
 # RPM specific configuration (minimum)
 # _____________________________________________________________________________
-#set(CPACK_RPM_PACKAGE_LICENSE "Proprietary")
-#set(CPACK_RPM_PACKAGE_GROUP "Development/Libraries")
-#set(CPACK_RPM_PACKAGE_VERSION ${VERSION})
-#set(CPACK_RPM_COMPONENT_INSTALL ON)   # necessary even if CPACK_COMPONENT_INSTALL set to ON. A bug in my opinion.
+set(CPACK_RPM_PACKAGE_LICENSE "Proprietary")
+set(CPACK_RPM_PACKAGE_GROUP "Development/Libraries")
+set(CPACK_RPM_PACKAGE_VERSION ${VERSION})
+set(CPACK_RPM_COMPONENT_INSTALL ON)   # necessary even if CPACK_COMPONENT_INSTALL set to ON. A bug in my opinion.
 
 # OS X PackageMaker
 # _____________________________________________________________________________
-#set(CPACK_OSX_PACKAGE_VERSION "10.5")
+set(CPACK_OSX_PACKAGE_VERSION "10.5")
 
 include (InstallRequiredSystemLibraries)
 include (CPack)

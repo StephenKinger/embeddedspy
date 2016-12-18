@@ -9,8 +9,7 @@ set(LIB_SOURCES
 )
 
 set(APP_HEADERS
-  "${CMAKE_CURRENT_BINARY_DIR}/../include/WebService/Version.h" # Generated header
-  ../include/WebServiceSpy/WebServer.h # Normal header
+
 )
 
 set(APP_SOURCES
