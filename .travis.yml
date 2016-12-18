@@ -6,7 +6,7 @@ os:
 #  - osx https://docs.travis-ci.com/user/multi-os/
 
 compiler:
- - gcc
+ - g++
 
 addons:
   apt:
